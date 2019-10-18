@@ -1,7 +1,0 @@
-package FactoryPattern.SimpleFactory;
-
-public class Banana extends Fruit {
-	public void get() {
-		System.out.println("²É¼¯Æ»¹û");
-	}
-}
