@@ -1,0 +1,5 @@
+package FactoryPattern.SimpleFactory;
+
+public class Apple {
+
+}
