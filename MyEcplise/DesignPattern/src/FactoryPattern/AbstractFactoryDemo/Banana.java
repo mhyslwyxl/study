@@ -1,0 +1,7 @@
+package FactoryPattern.AbstractFactoryDemo;
+
+public class Banana implements Plant {
+	public void show() {
+		System.out.println("÷÷¡À“ªø√œ„Ω∂ ˜");
+	}
+}

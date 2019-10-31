@@ -1,10 +1,7 @@
 package Strategy;
 
 public class MainCass {
-    public static void main(String[] args) {
-        System.out.println("ç­–ç•¥æ¨¡å¼");
-
-        Strategy strategy = new Strategy(new Md5Encrypt());
-        strategy.encrypt();
-    }
+	public static void main(String[] args) {
+		System.out.println("²ßÂÔÄ£Ê½");
+	}
 }

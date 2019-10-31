@@ -1,0 +1,11 @@
+﻿@model IEnumerable<AspEFCore.Domain.Province>
+
+@{
+    ViewData["Title"] = "Query";
+}
+@foreach (AspEFCore.Domain.Province p in Model)
+{
+    <p>@p.Name</p>
+}
+<h1>Query</h1>
+

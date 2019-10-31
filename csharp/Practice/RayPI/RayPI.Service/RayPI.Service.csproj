@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlSugarCore" Version="5.0.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RayPI.Entity\RayPI.Entity.csproj" />
+    <ProjectReference Include="..\RayPI.IService\RayPI.IService.csproj" />
+    <ProjectReference Include="..\RayPI.Model\RayPI.Model.csproj" />
+  </ItemGroup>
+
+</Project>

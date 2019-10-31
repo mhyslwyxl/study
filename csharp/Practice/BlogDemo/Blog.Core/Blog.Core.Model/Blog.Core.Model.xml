@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blog.Core.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Blog.Core.Model.Models.sysUserInfo">
+            <summary>
+            用户信息表
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uLoginName">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uLoginPWD">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uRealName">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uStatus">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uRemark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uCreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uUpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uLastErrTime">
+             <summary>
+            最后登录时间 
+             </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.uErrorCount">
+             <summary>
+            错误次数 
+             </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.sysUserInfo.name">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="T:Blog.Core.Model.PageModel`1">
+            <summary>
+            通用分页信息类
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.PageModel`1.page">
+            <summary>
+            当前页标
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.PageModel`1.pageCount">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.PageModel`1.dataCount">
+            <summary>
+            数据总数
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.PageModel`1.PageSize">
+            <summary>
+            每页大小
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.PageModel`1.data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RayPI.Entity</name>
+    </assembly>
+    <members>
+        <member name="T:RayPI.Entity.Student">
+            <summary>
+            学生实体
+            </summary>
+        </member>
+        <member name="P:RayPI.Entity.Student.Tid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:RayPI.Entity.Student.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:RayPI.Entity.Student.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+    </members>
+</doc>
