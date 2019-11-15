@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="IdentityModel" Version="4.0.0" />
-    <PackageReference Include="sqlSugar" Version="5.0.0.10" />
+    <PackageReference Include="sqlSugarCore" Version="5.0.0.10" />
   </ItemGroup>
 
   <ItemGroup>

@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Core", "Blog.Core\Blog
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Core.Model", "Blog.Core.Model\Blog.Core.Model.csproj", "{02F44CFA-61C8-4186-A753-F931BF9204BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Core.Common", "Blog.Core.Common\Blog.Core.Common.csproj", "{26C1EBAB-BD22-451F-BEFE-9AFCF8E1E2DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Core.Common", "Blog.Core.Common\Blog.Core.Common.csproj", "{26C1EBAB-BD22-451F-BEFE-9AFCF8E1E2DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Core.IServices", "Blog.Core.IServices\Blog.Core.IServices.csproj", "{F1AD660F-2DCB-4E62-A299-B313E4B05A78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Core.IServices", "Blog.Core.IServices\Blog.Core.IServices.csproj", "{F1AD660F-2DCB-4E62-A299-B313E4B05A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Core.IRepository", "Blog.Core.IRepository\Blog.Core.IRepository.csproj", "{71C8F964-2B03-45D2-B6FA-31A2AC2C325F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Core.Repository", "Blog.Core.Repository\Blog.Core.Repository.csproj", "{A2C8B464-F66B-4C17-93BE-1511844B31A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{F1AD660F-2DCB-4E62-A299-B313E4B05A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1AD660F-2DCB-4E62-A299-B313E4B05A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1AD660F-2DCB-4E62-A299-B313E4B05A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71C8F964-2B03-45D2-B6FA-31A2AC2C325F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C8F964-2B03-45D2-B6FA-31A2AC2C325F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C8F964-2B03-45D2-B6FA-31A2AC2C325F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C8F964-2B03-45D2-B6FA-31A2AC2C325F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C8B464-F66B-4C17-93BE-1511844B31A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C8B464-F66B-4C17-93BE-1511844B31A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C8B464-F66B-4C17-93BE-1511844B31A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C8B464-F66B-4C17-93BE-1511844B31A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

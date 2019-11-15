@@ -20,13 +20,8 @@ namespace Blog.Core.Controllers
     [Produces("application/json")]
     //[Route("api/Login")]
     [Route("api/v1/[controller]")]
-    [AllowAnonymous]
     public class LoginController : ControllerBase
     {
-        public LoginController()
-        {
-        }
-
         [HttpGet]
         [Authorize(Roles = "Admin")]
         public IActionResult Get()
@@ -35,6 +30,7 @@ namespace Blog.Core.Controllers
         }
 
         [HttpGet("jwt")]
+        [AllowAnonymous]
         public IActionResult GetJwtStr(string name, string pass)
         {
             string jwtStr = string.Empty;

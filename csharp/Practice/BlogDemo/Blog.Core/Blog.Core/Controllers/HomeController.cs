@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Blog.Core.Controllers
 {
+    [Route("api/v1/[controller]")]
+    [ApiController]
     public class HomeController : ControllerBase
     {
         [HttpGet]

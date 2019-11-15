@@ -4,6 +4,32 @@
         <name>RayPI.Entity</name>
     </assembly>
     <members>
+        <member name="T:Models.Book">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Models.Book.BookId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:Models.Book.BookName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:Models.Book.PubDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
         <member name="T:RayPI.Entity.Student">
             <summary>
             学生实体

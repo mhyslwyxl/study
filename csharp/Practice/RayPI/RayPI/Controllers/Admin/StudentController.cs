@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RayPI.Bussiness.Admin;
@@ -35,6 +36,7 @@ namespace RayPI.Controllers.Admin
         /// <param name="id">Id</param>
         /// <returns></returns>
         [HttpGet("{id}")]
+        [Authorize(Policy = "Admin")]
         public JsonResult GetStudentById(long id)
         {
             return Json(bll.GetById(id));

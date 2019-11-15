@@ -4,6 +4,68 @@
         <name>RayPI</name>
     </assembly>
     <members>
+        <member name="M:RayPI.AuthHelper.JwtHelper.IssueJwt(RayPI.Token.Model.TokenModel)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayPI.AuthHelper.JwtHelper.SerializeJwt(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:RayPI.AuthHelper.TokenAuth">
+            <summary>
+            Token验证授权中间件
+            </summary>
+        </member>
+        <member name="F:RayPI.AuthHelper.TokenAuth._next">
+            <summary>
+            http委托
+            </summary>
+        </member>
+        <member name="M:RayPI.AuthHelper.TokenAuth.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:RayPI.AuthHelper.TokenAuth.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            验证授权
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayPI.AuthHelper.TokenAuth.SerializeJwt(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:RayPI.Controllers.Admin.EntityController">
+            <summary>
+            实体操作模块
+            </summary>
+        </member>
+        <member name="M:RayPI.Controllers.Admin.EntityController.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="hostingEnvironment"></param>
+        </member>
+        <member name="M:RayPI.Controllers.Admin.EntityController.CreateEntity(System.String)">
+            <summary>
+            生成实体类
+            </summary>
+            <param name="entityName"></param>
+            <returns></returns>
+        </member>
         <member name="T:RayPI.Controllers.Admin.StudentController">
             <summary>
             学生模块

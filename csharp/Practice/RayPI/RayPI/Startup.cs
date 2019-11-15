@@ -12,6 +12,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
 using System.IO;
+using Microsoft.Extensions.Caching.Memory;
+using RayPI.AuthHelper;
 
 namespace RayPI
 {
@@ -83,6 +85,20 @@ namespace RayPI
                 });
             });
             #endregion
+
+            #region Token
+            services.AddSingleton<IMemoryCache>(factory =>
+            {
+                var cache = new MemoryCache(new MemoryCacheOptions());
+                return cache;
+            });
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("System", policy => policy.RequireClaim("SystemType").Build());
+                options.AddPolicy("Client", policy => policy.RequireClaim("ClientType").Build());
+                options.AddPolicy("Admin", policy => policy.RequireClaim("AdminType").Build());
+            });
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -92,16 +108,6 @@ namespace RayPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-
             #region Swagger
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -110,6 +116,19 @@ namespace RayPI
                 //c.RoutePrefix = "";
             });
             #endregion
+
+            app.UseRouting();
+
+            app.UseAuthorization(); 
+
+            #region TokenAuth
+            app.UseMiddleware<TokenAuth>();
+            #endregion
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });            
         }
     }
 }

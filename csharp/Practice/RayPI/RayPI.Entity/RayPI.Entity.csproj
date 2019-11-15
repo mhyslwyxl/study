@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -9,5 +9,9 @@
     <PlatformTarget>x64</PlatformTarget>
     <OutputPath>E:\MyStudy\csharp\Practice\RayPI\RayPI\bin\Debug\netcoreapp3.0\</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlSugarCore" Version="5.0.0.10" />
+  </ItemGroup>
 
 </Project>
